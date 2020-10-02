@@ -1,0 +1,23 @@
+{
+  "name": "password_js_app",
+  "version": "1.0.0",
+  "description": "password_js_app uses passwordJS library to handle authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seid27/password_js_app.git"
+  },
+  "author": "Seid Redi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seid27/password_js_app/issues"
+  },
+  "homepage": "https://github.com/seid27/password_js_app#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.7"
+  }
+}
