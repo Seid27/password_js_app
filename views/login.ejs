@@ -1,0 +1,28 @@
+
+    <div class="row mt-5">
+        <div class="col-md-6 m-auto">
+            <div class="card card-body" >
+                <%- include ("./partials/messages") %>
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                        <h1>Login</h1><br>
+                        <input type="text" placeholder="Username or Email" name="login" class="form-control" ><br>
+                        
+                        <input type="password" placeholder="Password" name="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"><br>
+                        <button type="submit" class="btn btn-dark">Sign in</button>
+                    </div>
+                    
+                    <p>
+                        Create an account? 
+                        <a href="/register" style="text-decoration: none;">Sign up</a><br>
+                    </p>
+
+                    <p>
+                        Go to home?
+                        <a href="/" style="text-decoration: none;">Home</a>
+                    </p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>

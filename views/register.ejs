@@ -1,24 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%=title%></title>
-</head>
-<body>
 
-    <form action="/register" method="POST">
-        <label for="">User Name</label>
-        <input type="text" name="userName"><br>
-        <label for="">Email</label>
-        <input type="text" name="email"><br>
-        <label for="">Password</label>
-        <input type="password" name="password"><br>
-        <label for="">Confirm Password</label>
-        <input type="password" name="confirmPassword"><br>
-        <button type="submit">Register</button>
+    <div class="row m-5">
+        <div class="col-md-6 m-auto">
+            <div class="card card-body" >
+                
+                <%- include ("./partials/messages") %>
+                <form action="/register" method="POST">
+                    <div class="form-group">
+                        <h1>Sign up</h1><br>
+                        <input type="text" name="userName" placeholder="Username" class="form-control" value="<%= typeof userName != 'undefined' ? userName : ''%>"><br>
+                        
+                        <input type="email" name="email" placeholder="Email" class="form-control" value="<%= typeof email != 'undefined' ?  email : '' %>"><br>
 
-    </form>
-    
-</body>
-</html>
+                        <input type="password" class="form-control" name="password" placeholder="Password" value="<%= typeof password != 'undefined' ? password : '' %>"><br>
+                        
+                        <input type="password" name="confirmPassword" placeholder="Confirm password" class="form-control" value="<%= typeof confirmPassword != 'undefined' ? confirmPassword : '' %>"><br>
+                        <button type="submit" class="btn btn-dark">Sign up</button>
+                    </div>
+                    
+                    <p>
+                        Have an account? 
+                        <a href="/login" >Login</a>
+                    </p>
+                    <p>
+                        Go to home?
+                        <a href="/">home</a>
+                    </p>
+                    
+                </form>
+            </div>
+        </div>
+    </div>
